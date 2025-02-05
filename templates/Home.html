@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sit-In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="transparent-header">
+        <div class="header-left">
+            <div class="logo">  
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            </div>
+            <h1>CSS Sit-In</h1>
+        </div>
+        <div class="login-signup">
+            <button class="login" onclick="window.location.href='{{ url_for('login') }}'">Login</button>
+            <button class="signup" onclick="window.location.href='{{ url_for('register') }}'">Register</button>
+        </div>
+    </header>
+    <main>
+        <section class="about-section">
+            <h2>About CSS Sit-In</h2>
+            <p>This is a draft description of the CSS Sit-In Monitoring System. You can edit this description to provide more details about the system and its features. Add any relevant information here to help users understand the purpose and functionality of the system.</p>
+        </section>
+    </main>
+</body>
+</html>
